@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <body>
+        <div class="main-wrapper">
+            <header class="header">
+                <div class="header-content ">
+                    <div class="col-6 search">
+                        <span class="alignt-svg">
+                        	<input class="search-content" type="search" placeholder="Search the docs...">
+						
+                        	<svg class="search-svg" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle r="6.5" transform="matrix(-1 0 0 1 7.64795 7.5)" stroke="#BCBCBC"/>
+								<path d="M12.2305 12.8686L16.9589 17.8657" stroke="#BCBCBC" stroke-linecap="square"/>
+							</svg>
+						</span>
+
+                    </div>
+                    <div class="col-6 resolution-set-first">
+                        <a class="resolution-set" href="#">
+                            <svg class="resolution-svg" width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.8 1.64578C0.8 1.20395 1.15817 0.845776 1.6 0.845776H15.4C15.8418 0.845776 16.2 1.20395 16.2 1.64578V26.3C16.2 26.7418 15.8418 27.1 15.4 27.1H1.6C1.15817 27.1 0.8 26.7418 0.8 26.3V1.64578Z" stroke="#BCBCBC" stroke-width="1.6"/>
+								<mask id="path-2-inside-1" fill="white">
+								<ellipse cx="8.50003" cy="24.4182" rx="1.13333" ry="1.16059"/>
+								</mask>
+								<ellipse cx="8.50003" cy="24.4182" rx="1.13333" ry="1.16059" fill="white"/>
+								<path d="M8.03337 24.4182C8.03337 24.2115 8.20666 23.9788 8.50003 23.9788V27.1788C10.0452 27.1788 11.2334 25.9067 11.2334 24.4182H8.03337ZM8.50003 23.9788C8.7934 23.9788 8.9667 24.2115 8.9667 24.4182H5.7667C5.7667 25.9067 6.95482 27.1788 8.50003 27.1788V23.9788ZM8.9667 24.4182C8.9667 24.6248 8.7934 24.8576 8.50003 24.8576V21.6576C6.95482 21.6576 5.7667 22.9296 5.7667 24.4182H8.9667ZM8.50003 24.8576C8.20666 24.8576 8.03337 24.6248 8.03337 24.4182H11.2334C11.2334 22.9296 10.0452 21.6576 8.50003 21.6576V24.8576Z" fill="#BCBCBC" mask="url(#path-2-inside-1)"/>
+								<mask id="path-4-inside-2" fill="white">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.1333 20.9364V22.097H15.8666V20.9364H1.1333Z"/>
+								</mask>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.1333 20.9364V22.097H15.8666V20.9364H1.1333Z" fill="white"/>
+								<path d="M1.1333 20.9364V19.3364H-0.466699V20.9364H1.1333ZM1.1333 22.097H-0.466699V23.697H1.1333V22.097ZM15.8666 22.097V23.697H17.4666V22.097H15.8666ZM15.8666 20.9364H17.4666V19.3364H15.8666V20.9364ZM-0.466699 20.9364V22.097H2.7333V20.9364H-0.466699ZM1.1333 23.697H15.8666V20.497H1.1333V23.697ZM17.4666 22.097V20.9364H14.2666V22.097H17.4666ZM15.8666 19.3364H1.1333V22.5364H15.8666V19.3364Z" fill="#BCBCBC" mask="url(#path-4-inside-2)"/>
+							</svg>
+
+                        </a>
+
+                        <a class="resolution-set" href="#">
+                            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.8 1.6C0.8 1.15817 1.15817 0.8 1.6 0.8H25.4C25.8418 0.8 26.2 1.15817 26.2 1.6V32.8667C26.2 33.3085 25.8418 33.6667 25.4 33.6667H1.6C1.15817 33.6667 0.8 33.3085 0.8 32.8667V1.6Z" stroke="#BCBCBC" stroke-width="1.6"/>
+								<mask id="path-2-inside-1" fill="white">
+								<ellipse cx="13.4999" cy="30.1584" rx="1.35" ry="1.43611"/>
+								</mask>
+								<ellipse cx="13.4999" cy="30.1584" rx="1.35" ry="1.43611" fill="white"/>
+								<path d="M13.2499 30.1584C13.2499 30.145 13.256 30.1129 13.2887 30.078C13.3231 30.0415 13.3977 29.9945 13.4999 29.9945V33.1945C15.2209 33.1945 16.4499 31.7406 16.4499 30.1584H13.2499ZM13.4999 29.9945C13.6021 29.9945 13.6767 30.0415 13.7111 30.078C13.7438 30.1129 13.7499 30.145 13.7499 30.1584H10.5499C10.5499 31.7406 11.7789 33.1945 13.4999 33.1945V29.9945ZM13.7499 30.1584C13.7499 30.1718 13.7438 30.2039 13.7111 30.2388C13.6767 30.2754 13.6021 30.3223 13.4999 30.3223V27.1223C11.7789 27.1223 10.5499 28.5762 10.5499 30.1584H13.7499ZM13.4999 30.3223C13.3977 30.3223 13.3231 30.2754 13.2887 30.2388C13.256 30.2039 13.2499 30.1718 13.2499 30.1584H16.4499C16.4499 28.5762 15.2209 27.1223 13.4999 27.1223V30.3223Z" fill="#BCBCBC" mask="url(#path-2-inside-1)"/>
+								<mask id="path-4-inside-2" fill="white">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.3501 25.85V27.2861H25.6501V25.85H1.3501Z"/>
+								</mask>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.3501 25.85V27.2861H25.6501V25.85H1.3501Z" fill="white"/>
+								<path d="M1.3501 25.85V24.25H-0.249902V25.85H1.3501ZM1.3501 27.2861H-0.249902V28.8861H1.3501V27.2861ZM25.6501 27.2861V28.8861H27.2501V27.2861H25.6501ZM25.6501 25.85H27.2501V24.25H25.6501V25.85ZM-0.249902 25.85V27.2861H2.9501V25.85H-0.249902ZM1.3501 28.8861H25.6501V25.6861H1.3501V28.8861ZM27.2501 27.2861V25.85H24.0501V27.2861H27.2501ZM25.6501 24.25H1.3501V27.45H25.6501V24.25Z" fill="#BCBCBC" mask="url(#path-4-inside-2)"/>
+							</svg>
+                        </a>
+                        <a class="resolution-set" href="#">
+                            <svg width="51" height="38" viewBox="0 0 51 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 2C6 1.44772 6.44772 1 7 1H43C43.5523 1 44 1.44772 44 2V31.7778C44 32.3301 43.5523 32.7778 43 32.7778H7C6.44771 32.7778 6 32.3301 6 31.7778V2Z" stroke="#F5A623" stroke-width="2"/>
+								<path d="M1.22926 33.8534C1.11209 33.2373 1.58447 32.6666 2.21165 32.6666H48.0033C48.652 32.6666 49.129 33.2748 48.9745 33.9048L48.4023 36.2381C48.2926 36.6854 47.8916 37 47.4311 37H2.65536C2.17512 37 1.76268 36.6586 1.67297 36.1868L1.22926 33.8534Z" stroke="#F5A623" stroke-width="2"/>
+							</svg>
+                        </a>
+                        <a class="resolution-set" href="#">
+                            <svg width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 2C1 1.44772 1.44772 1 2 1H46C46.5523 1 47 1.44772 47 2V32.875C47 33.4273 46.5523 33.875 46 33.875H2C1.44772 33.875 1 33.4273 1 32.875V2Z" stroke="#BCBCBC" stroke-width="2"/>
+								<path d="M16 40.1591C16 40.1277 16.0254 40.1023 16.0568 40.1023H31.9432C31.9746 40.1023 32 40.1277 32 40.1591C32 40.1905 31.9746 40.2159 31.9432 40.2159H16.0568C16.0254 40.2159 16 40.1905 16 40.1591Z" fill="white" stroke="#BCBCBC" stroke-width="2"/>
+								<path d="M29.8748 40.2159H18.1253L18.8887 33.7614H29.1113L29.8748 40.2159Z" stroke="#BCBCBC" stroke-width="2"/>
+							</svg>
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+            <aside class="sidebar">
+                <ul class="menu">
+                    <li class="menu_element"><a href="">Introduction</a></li>
+                    <li class="menu_element"><a href="">Visual Style</a></li>
+                    <li class="menu_element"><a href="">Voice & Tone</a></li>
+                    <li class="menu_element ">
+                        <label for="dropdown" class="dropdown-button" tabindex="0">UI Components</label>
+                        <span>
+							<svg class="simple-select__arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
+								<path d="M12.939 23.842l-12.146-12.146c-0.586-0.586-0.586-1.536 0-2.121l1.417-1.417c0.585-0.585 1.533-0.586 2.119-0.002l9.672 9.626 9.672-9.626c0.586-0.583 1.534-0.582 2.119 0.002l1.417 1.417c0.586 0.586 0.586 1.536 0 2.121l-12.146 12.146c-0.586 0.586-1.536 0.586-2.121 0z"></path>
+							</svg>
+						 </span>
+                    </li>
+                    <div class="dropdown-wrapper">
+                        <input type="checkbox" class="dropdown-input" id="dropdown" name="dropdown">
+
+
+                        <div class="dropdown-content">
+                            <ul class="dropdown-content-element">
+                                <li class="under-menu-element">Grid System</li>
+                                <li class="under-menu-element">Typography</li>
+                                <li class="under-menu-element">Buttons</li>
+                                <li class="under-menu-element">Color Palette</li>
+                                <li class="under-menu-element">Breadcrumbs</li>
+                                <li class="under-menu-element">Navigation</li>
+                                <li class="under-menu-element">Modals</li>
+                                <li class="under-menu-element">Icons</li>
+                                <li class="under-menu-element">Helper clasesses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <li class="menu_element"><a href="">CSS Utility</a></li>
+                    <li class="menu_element"><a href="">Resources</a></li>
+                </ul>
+            </aside>
+            <main class="main">
+                <div class="section">
+                    <div class="section-title">
+                        <div class="category">
+                            UI Components
+                        </div>
+                        <div class="title">
+                            Icons
+                        </div>
+                        <div class="summary">
+                            Good typography reinforces the goals of the text and communicates a set of points. The standard font for the U.Va. Library Design System is myriad.
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content-box">
+                            <h2 class="box-title">Content</h2>
+                            <div class="box-text">
+                                <h2>Type Weights</h2>
+                                <h2>Type Size and Line Height</h2>
+                                <h2>Headings</h2>
+                                <h2>Styles</h2>
+                            </div>
+                        </div>
+                        <h1 class="subtitle">Type Weights</h1>
+                        <h4 class="subtitle-summary">It uses four different font weights:200,300,400 and 600</h4>
+                        <div class="subtitle-box">
+                            <div class="subtitle-box-text">
+                                <div class="type-1-title">Aa</div>
+                                <div class="type-1-text">
+                                    <h4>Myriad Pro bold</h4>
+                                    <h4>Weight:600</h4>
+                                </div>
+                            </div>
+                            <div class="subtitle-box-text">
+                                <div class="type-1-title type-2-title">Aa</div>
+                                <div class="type-1-text type-2-text">
+                                    <h4>Myriad Pro bold</h4>
+                                    <h4>Weight:400</h4>
+                                </div>
+                            </div>
+                            <div class="subtitle-box-text">
+                                <div class="type-1-title type-3-title">Aa</div>
+                                <div class="type-1-text type-3-text">
+                                    <h4>Myriad Pro bold</h4>
+                                    <h4>Weight:300</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dis-77">
+                            <h1 class="subtitle">Type Sizes and Line Height</h1>
+                            <h4 class="subtitle-summary">The basic font sizes are based on a typographic scale of 12, 14, 16, 20, and 34. Line height is defined using the multiple of the font size.
+                                <b>Line Height=1,3*X</b> where equals Font size
+                            </h4>
+                        </div>
+                        <h1 class="subtitle">Headlings</h1>
+                        <h4 class="subtitle-summary">Pre-defined Typeface Styles</h4>
+                        <div class="subtitle-box subtitle-box-1">
+                            <h4 class="type-2-1-title">Headline 1</h4>
+                            <h4 class="type-2-2-title">Headline 2</h4>
+                            <h4 class="type-2-3-title">Headline 3</h4>
+                            <h4 class="type-2-4-title">Headline 4</h4>
+                            <h4 class="type-2-5-title">Headline 5</h4>
+                            <h4 class="type-2-6-title">Headline 6</h4>
+                        </div>
+                        <div class="section-title">
+                            <div class="category">
+                                UI Components
+                            </div>
+                            <div class="title">
+                                Colors
+                            </div>
+                            <div class="summary">
+                                Good typography reinforces the goals of the text and communicates a set of points. The standard font for the U.Va. Library Design System is myriad.
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </main>
+
+
+
+        </div>
+
+
+
+
+
+        <script src="node_modules/jquery/dist/jquery.min.js">
+        </script>
+        <script src="node_modules/select2/dist/js/select2.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+
+</html>

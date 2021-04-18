@@ -1,0 +1,107 @@
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "variables";
+@import "helpers";
+@import "reset";
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "sidebar";
+@import "header";
+@import "UIComponets";
+// @charset "UTF-8";
+// @font-face
+*::before,
+::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url(../fonts/MYRIADPRO-REGULAR.woff)
+}
+
+// @font-face {
+//     font-family: 'MyriadPro';
+//     src: url(../fonts/MYRIADPRO-BOLD.woff)
+// }
+body {
+    font-family: 'MyriadPro', sans-serif;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header,
+.main {
+    width: calc(100% - #{$siderbar-width});
+    margin-left: $siderbar-width;
+}
+
+.header {
+    height: $header-height;
+    border-bottom: 1px solid $default-border-color;
+}
+
+.section {
+    width: 800px;
+    padding-left: 50px;
+    padding-top: 43px;
+}
+
+.section+.section {
+    padding-top: 80px;
+}
+
+.section-title {
+    .category {
+        font-size: 16px;
+        line-height: 18.75px;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+    .title {
+        font-size: 56px;
+        font-weight: 600;
+        line-height: 67.2px;
+        padding-bottom: 21px;
+        border-bottom: 1px solid #0D3268;
+        margin-bottom: 35px;
+    }
+    .summary {
+        font-size: 20px;
+        line-height: 23.44px;
+        color: #333;
+        margin-bottom: 50px;
+    }
+}
+
+// body {
+//     background-color: green;
+//     color: $base-color
+// }
+// .box {n
+//     border: $base-border;
+// }
+// ul {
+//     li {
+//         a {
+//             font-size: 30px;
+//         }
+//     }
+// }
+// .blog {
+//     @include vertical-mid();
+// }
+// .artic {
+//     @include vertical-mid();
+// }
+// .list1 {
+//     @extend %flex-center;
+// }
+// .list2 {
+//     @extend %flex-center;
+// }
+// .list3 {
+//     @extend %flex-center;
+// }
